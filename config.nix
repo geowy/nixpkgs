@@ -1,7 +1,8 @@
 {
-  packageOverrides = pkgs: rec {
+  packageOverrides = pkgs:
+  let
     neovim = (import ./neovim.nix pkgs);
-
+  in {
     all = with pkgs; buildEnv {
       name = "all";
       paths = [
