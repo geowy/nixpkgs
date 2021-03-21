@@ -41,9 +41,6 @@
         # web
         httpie
         jq
-
-        # TODO zsh
-        # TODO GNU coreutils?
       ];
     };
   };
