@@ -1,5 +1,5 @@
-pkgs:
-with pkgs; let
+pkgs: with pkgs;
+let
   ancient-colors-vim = import ./ancient-colors-vim.nix pkgs;
 in
   neovim.override {

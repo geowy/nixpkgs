@@ -1,10 +1,10 @@
 {
-  packageOverrides = pkgs:
-  let
+  packageOverrides = pkgs: rec {
     neovim = import ./neovim.nix pkgs;
-  in {
+
     all = with pkgs; buildEnv {
       name = "all";
+
       paths = [
         # cloud
         aws-vault
@@ -35,6 +35,7 @@
         pstree
 
         # text
+        bat
         neovim
         silver-searcher
         universal-ctags
