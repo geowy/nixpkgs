@@ -12,7 +12,7 @@
         terraform
 
         # file mgmt
-        ranger
+        lf
         tree
 
         # git
@@ -31,8 +31,10 @@
         direnv
         fswatch
         fzf
+        gnupg
         htop
         pstree
+        zsh
 
         # text
         bat

@@ -14,7 +14,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 
-map <Leader>g :GFiles<CR>
+map <Leader>g :Files<CR>
+map <Leader>f :LF %:p split<CR>
 
 " windows
 set splitbelow

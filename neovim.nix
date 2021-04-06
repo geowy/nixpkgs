@@ -1,6 +1,7 @@
 pkgs: with pkgs;
 let
   ancient-colors-vim = import ./ancient-colors-vim.nix pkgs;
+  vim-lf = import ./vim-lf.nix pkgs;
 in
   neovim.override {
     configure = {
@@ -16,6 +17,7 @@ in
           vim-better-whitespace
           vim-fugitive
           vim-go
+          vim-lf
           vim-polyglot
           vim-signature
           vim-signify
